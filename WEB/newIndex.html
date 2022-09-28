@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+
+<!-- AWP_In_Variable Name='"START"' -->
+<!-- AWP_In_Variable Name='"STOP"'  -->
+
+<!-- AWP_In_Variable Name='"belt"'  -->
+<!-- AWP_In_Variable Name='"gate1"' -->
+<!-- AWP_In_Variable Name='"gate2"' -->
+<!-- AWP_In_Variable Name='"hold"'  -->
+
+<!-- AWP_In_Variable Name='"optik_A"'   -->
+<!-- AWP_In_Variable Name='"optik_B"'   -->
+<!-- AWP_In_Variable Name='"kapasitif"' -->
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--meta http-equiv="refresh" content="1" -->
+    <link rel="stylesheet" href="newStyle.css"/>
+    <title>Sorting Conveyor Control Panel</title>
+</head>
+<body>
+    <header>
+        <div class="headerbox">
+            <div class="title">
+                Sorting Conveyor Control Panel
+            </div>
+        </div>
+    </header>
+    <main>
+        <div class="control">
+            <div class="panel">
+                <ul>
+                    <li>
+                        <form action="newIndexGreen.html" method="get">
+                            <input type="hidden" name='"STOP"'  value="0">
+                            <input type="hidden" name='"START"' value="1">
+                            <input type="submit" value=" " class="greenButton">
+                        </form>
+                    </li>
+                    <li>
+                        <form action="newIndexRed.html" method="get">
+                            <input type="hidden" name='"STOP"'  value="1">
+                            <input type="hidden" name='"START"' value="0">
+                            <input type="submit" value=" " class="redButton">
+                        </form>
+                    </li>
+                </ul>
+                <div class="panel">
+                    <ul>
+                        <li><div class="grayButton"></div></li>
+                        <li><div class="grayButton"></div></li>
+                    </ul>
+                </div>
+                <div class="panel">
+                    <ul>
+                        <li><div class="whiteButton"></div></li>
+                        <li><div class="whiteButton"></div></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <hr/>
+        <div class="status">
+            <div class="in">
+                <ul>
+                    <li>
+                        Sensor Optik 1
+                        <span style="color: yellowgreen" class="logic"> :="optik_A": </span>
+                    </li>
+                    <li>
+                        Sensor Proximity
+                        <span style="color: yellowgreen" class="logic"> :="kapasitif": </span>
+                    </li>
+                    <li>
+                        Sensor Optik 2
+                        <span style="color: yellowgreen" class="logic"> :="optik_B": </span>
+                    </li>
+                </ul>
+            </div>
+            <hr/>
+            <div class="qo">
+                <ul>
+                    <li>
+                        Motor Driver
+                        <span style="color: green" class="logic"> :="belt": </span>
+                    </li>
+                    <li>
+                        Valve Double Acting
+                        <span style="color: green" class="logic"> :="gate1": </span>
+                    </li>
+                    <li>
+                        Valve Double Acting
+                        <span style="color: green" class="logic"> :="gate2": </span>
+                    </li>
+                    <li>
+                        Valve Single Acting
+                        <span style="color: green" class="logic"> :="hold": </span>
+                    </li>
+                </ul>
+            </div>
+            <hr/>
+            <button>
+
+            </button>
+            <script>
+                var a=document.getElementsByName('"START"').value
+                    function test(){
+                        if (a == 1) {
+                            document.write("test1");
+                            document.write(a);
+                        }
+                        else if (a == 0) {
+                            document.write("test0");
+                            document.write(a);
+                        }
+                        else {
+                            document.write("test3");
+                            document.write(a);
+                        }
+                    }
+            </script>
+            <button type="button" onclick="test()">test</button>
+        </div>
+    </main>
+</body>
+</html>

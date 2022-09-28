@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<!-- AWP_In_Variable Name='"START"'-->
+<!-- AWP_In_Variable Name='"STOP"'-->
+<!-- AWP_In_Variable Name='"belt"'-->
+<!-- AWP_In_Variable Name='"optik_A"'-->
+<!-- AWP_In_Variable Name='"kapasitif"'-->
+<!-- AWP_In_Variable Name='"optik_B"'-->
+<!-- AWP_In_Variable Name='"gate1"'-->
+<!-- AWP_In_Variable Name='"gate2"'-->
+<!-- AWP_In_Variable Name='"hold"'-->
+<html lang="en">
+
+	<head>
+    		<title>My first website</title>
+	</head>
+
+	<body background ="bg.jpg">
+		
+	
+		<h1 style="color: cyan"><span class="tab2"></span>FESTO </h1>
+		<style>
+
+       			 .tab {
+            			display: inline-block;
+           			 margin-left: 40px;
+       				 }
+			.tab2 {
+            			display: inline-block;
+           			 margin-left: 200px;
+       				 }
+    		</style>
+	<section>
+	
+		<form>
+			<input type="hidden" name='"STOP"' value="0">
+			<input type="hidden" name='"START"' value="1">
+			<input type="image" src="ijo.jpg" height="100" width="100">
+			<BR>
+			 MULAI
+		</button>
+		<span class="tab"></span>
+		<button>
+			<input type="hidden" name='"STOP"' value="1">
+			<input type="hidden" name='"START"' value="0"> 
+			<input type="image" src="merah.jpg" height="100" width="100">
+			<BR>
+			BERHENTI
+		</button>
+	
+	</section>
+	<BR>
+	<BR>
+	<section>
+	
+		<button>
+			<input type="hidden" name='"STOP"' value="0">
+			<input type="hidden" name='"START"' value="1">
+			<input type="image" src="ABU.jpg" height="100" width="100">
+			<BR>
+			 RESET
+		</button>
+		<span class="tab"></span>
+		<button>
+			<input type="hidden" name='"STOP"' value="1">
+			<input type="hidden" name='"START"' value="0"> 
+			<input type="image" src="ABU.jpg" height="100" width="100">
+			<BR>
+			AUTO/MAN
+		</button>
+	
+	</section>
+	<BR>
+	<BR>
+	<section>
+	
+		<button>
+			<input type="hidden" name='"STOP"' value="0">
+			<input type="hidden" name='"START"' value="1">
+			<input type="image" src="putih.jpg" height="100" width="100">
+			<BR>
+			 Q1
+		</button>
+		<span class="tab"></span>
+		<button>
+			<input type="hidden" name='"STOP"' value="1">
+			<input type="hidden" name='"START"' value="0"> 
+			<input type="image" src="putih.jpg" height="100" width="100">
+			<BR>
+			Q2
+		</button>
+	
+	</section>
+	<BR>
+	<BR>
+	<section>
+
+                    <h2>
+                        Sensor Status
+                        <h3>
+                            Object Detection
+                            <span style="color:teal">
+                                :="optik_A":
+                            </span>
+                            Metal Detection
+                            <span style="color:teal">
+                                :="kapasitif":
+                            </span>
+                            Color Detection
+                            <span style="color:teal">
+                                :="optik_B":
+                            </span>
+                        </h3>
+                    </h2>
+
+          </section>
+
+          <section>
+
+                    <h2>
+                        Actuator Status
+                        <h3>
+                            Belt Conveyor
+                            <span style="color:red">
+                                :="belt":
+                            </span>
+                            Gate Silver
+                            <span style="color:red">
+                                :="gate1":
+                            </span>
+                            Gate Merah
+                            <span style="color:red">
+                                :="gate2":
+                            </span>
+                            Hold
+                            <span style="color:red">
+                                :="hold":
+                            </span>
+                        </h3>
+                    </h2>
+
+           </section>
+
+	</body>
+
+</html>
